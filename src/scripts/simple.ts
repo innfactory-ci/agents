@@ -141,6 +141,7 @@ async function testStandardStreaming(): Promise<void> {
       additional_instructions: `The user's name is ${userName} and they are located in ${location}.`,
     },
     returnContent: true,
+    skipCleanup: true,
     customHandlers,
   });
 

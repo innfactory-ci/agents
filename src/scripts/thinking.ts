@@ -92,6 +92,7 @@ async function testThinking(): Promise<void> {
       llmConfig,
     },
     returnContent: true,
+    skipCleanup: true,
     customHandlers: customHandlers as t.RunConfig['customHandlers'],
   });
 
